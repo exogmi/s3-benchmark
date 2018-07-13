@@ -16,7 +16,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3"
-	"github.com/pivotal-golang/bytefmt"
+	"code.cloudfoundry.org/bytefmt"
 	"io"
 	"io/ioutil"
 	"log"
@@ -308,7 +308,7 @@ func main() {
 
 	// Create the bucket and delete all the objects
 	createBucket()
-	deleteAllObjects()
+	//deleteAllObjects()
 
 	// Loop running the tests
 	for loop := 1; loop <= loops; loop++ {
